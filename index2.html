@@ -9,9 +9,14 @@ function oblicz(){
   var wartoscA = document.getElementById("wartoscA").value;
   var wartoscB = document.getElementById("wartoscB").value;
   var dodawanie = new Number(wartoscA) + new Number(wartoscB);
-  
+  var odejmowanie = new Number(wartoscA) - new Number(wartoscB);
+  var mnozenie = new Number(wartoscA) * new Number(wartoscB);
+  var dzielenie = new Number(wartoscA) / new Number(wartoscB);
  
   document.getElementById("wynik").value = dodawanie;
+    document.getElementById("wynik").value = odejmowanie;
+    document.getElementById("wynik").value = mnozenie; 
+  document.getElementById("wynik").value = dzielenie;
  
   
 }
@@ -21,6 +26,14 @@ function oblicz(){
 ' value="Wartosc A"/>
 <input id="wartoscB" onclick='this.value=""
 ' value="Wartosc B"/>
+<input id="dodawanie" onclick='this.value=""
+' value="dodawanie"/>
+<input id="odejmowanie" onclick='this.value=""
+' value="odejmowanie"/>
+<input id="mnozenie" onclick='this.value=""
+' value="mnozenie"/>
+<input id="dzielenie" onclick='this.value=""
+' value="dzielenie"/>
 <button type="submit" onclick='oblicz()'>Naciśnij mnie</button>
 <input id="wynik" />
 
