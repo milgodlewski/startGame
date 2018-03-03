@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" /> 
+<title>Gra</title>
+</head>
+<script>
+function oblicz(){
+  var wartoscA = document.getElementById("wartoscA").value;
+  var wartoscB = document.getElementById("wartoscB").value;
+  var dodawanie = new Number(wartoscA) + new Number(wartoscB);
+  
+ 
+  document.getElementById("wynik").value = dodawanie;
+ 
+  
+}
+</script>
+<body>
+<input id="wartoscA" onclick='this.value=""
+' value="Wartosc A"/>
+<input id="wartoscB" onclick='this.value=""
+' value="Wartosc B"/>
+<button type="submit" onclick='oblicz()'>Naciśnij mnie</button>
+<input id="wynik" />
+
+</body>
+
+</html>
