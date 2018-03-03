@@ -13,27 +13,27 @@ function oblicz(){
   var mnozenie = new Number(wartoscA) * new Number(wartoscB);
   var dzielenie = new Number(wartoscA) / new Number(wartoscB);
  
-  document.getElementById("wynik").value = dodawanie;
-    document.getElementById("wynik").value = odejmowanie;
-    document.getElementById("wynik").value = mnozenie; 
-  document.getElementById("wynik").value = dzielenie;
- 
+  var dzialanie = document.getElementById("dzialanie").value;
+  var wynik = document.getElementById("wynik");
+  
+  if(dzialanie === "+") {
+	wynik.value = dodawanie;
+  } else if(dzialanie === "-") {
+	wynik.value = odejmowanie;
+  } else if(dzialanie === "/") {
+	wynik.value = dzielenie;
+  } else if(dzialanie === "*") {
+	wynik.value = mnozenie;
+  } else {
+	wynik.value = "Niepoprawne działanie";
+  }
   
 }
 </script>
 <body>
-<input id="wartoscA" onclick='this.value=""
-' value="Wartosc A"/>
-<input id="wartoscB" onclick='this.value=""
-' value="Wartosc B"/>
-<input id="dodawanie" onclick='this.value=""
-' value="dodawanie"/>
-<input id="odejmowanie" onclick='this.value=""
-' value="odejmowanie"/>
-<input id="mnozenie" onclick='this.value=""
-' value="mnozenie"/>
-<input id="dzielenie" onclick='this.value=""
-' value="dzielenie"/>
+<input id="wartoscA" onclick='this.value=""' value="Wartosc A"/>
+<input id="wartoscB" onclick='this.value=""' value="Wartosc B"/>
+<input id="dzialanie" onclick='this.value=""' value="dzialanie"/>
 <button type="submit" onclick='oblicz()'>Naciśnij mnie</button>
 <input id="wynik" />
 
