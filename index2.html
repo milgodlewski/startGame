@@ -11,15 +11,15 @@ function oblicz(){
   var dodawanie = wartoscA + wartoscB;
   
  
- document.getElementById(dodawanie=(wynik));
-  
+  document.getElementById("wynik").value = dodawanie;
+ 
   
 }
 </script>
 <body>
 <input id="wartoscA" onclick='this.value=""
 ' value="Wartosc A"/>
-<input id="WartoscB" onclick='this.value=""
+<input id="wartoscB" onclick='this.value=""
 ' value="Wartosc B"/>
 <button type="submit" onclick='oblicz()'>Naciśnij mnie</button>
 <input id="wynik" />
