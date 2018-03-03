@@ -8,7 +8,7 @@
 function oblicz(){
   var wartoscA = document.getElementById("wartoscA").value;
   var wartoscB = document.getElementById("wartoscB").value;
-  var dodawanie = wartoscA + wartoscB;
+  var dodawanie = new Number(wartoscA) + new Number(wartoscB);
   
  
   document.getElementById("wynik").value = dodawanie;
